@@ -4,6 +4,9 @@ import BookDisplay from "./components/BookDisplay";
 import axios from "axios";
 import {useState,useEffect, SetStateAction} from "react";
 import Filters from "./components/Filters";
+import logo from "./src/assets/logo.svg";
+import  painting from "./src/assets/painting.svg";
+import searchimg from "./src/assets/search.svg";
 
 
 function App() {
@@ -54,7 +57,7 @@ function App() {
       <div className="header">
          
         <a href="#" className="logo">
-          <img src="./src/assets/logo.svg" id="logo"></img>
+          <img src={logo} id="logo"></img>
         </a> 
         <div className="row1">
           <h1>
@@ -62,7 +65,7 @@ function App() {
             <br />
             the world is endless!
           </h1>
-          <img src="./src/assets/painting.svg" alt="painting_girl_reading"></img>
+          <img src={painting} alt="painting_girl_reading"></img>
          
         </div>
         <div className="row2">
@@ -73,7 +76,7 @@ function App() {
             onKeyPress={searchBook}/>
             
             <button>
-              <img src="./src/assets/search.svg"></img>
+              <img src={searchimg}></img>
             </button>
           </div>
         </div>
