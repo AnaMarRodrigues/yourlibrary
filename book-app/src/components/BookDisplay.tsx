@@ -12,7 +12,8 @@ const BookDisplay = ({ book }) => {
   console.log(book);
 
   const [show, setShow] = useState(false);
-  const [bookItem, setItem] = useState();
+  const [bookItem, setItem] = useState<any>();
+
   return (
     <>
       {book.map(
