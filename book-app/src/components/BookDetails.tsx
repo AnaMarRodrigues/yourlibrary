@@ -1,3 +1,5 @@
+import cruz from "../assets/xmark.svg";
+
 const BookDetails = ({ show, item, onClose }) => {
   if (!show) {
     return null;
@@ -9,7 +11,7 @@ const BookDetails = ({ show, item, onClose }) => {
       <div className="details-div">
         <div className="details-inner">
           <button className="close" onClick={onClose}>
-            <img src="./src/assets/xmark.svg" id="close"></img>
+            <img src={cruz} id="close"></img>
           </button>
           <div className="inner-box">
             <img src={thumbnail} alt="" />
