@@ -7,13 +7,13 @@ import {
   useState,
 } from "react";
 import BookDetails from "./BookDetails";
+import cover from "../assets/no_cover.png";
 
 const BookDisplay = ({ book }) => {
   console.log(book);
 
   const [show, setShow] = useState(false);
   const [bookItem, setItem] = useState<any>();
-
   return (
     <>
       {book.map(
@@ -59,7 +59,7 @@ const BookDisplay = ({ book }) => {
                   <img src={thumbnail} alt="" />
                 ) : (
                   <div className="placeholder-image">
-                    <img src="./src/assets/no_cover.png" alt="No Cover"></img>
+                    <img src={cover} alt="No Cover"></img>
                   </div>
                 )}
                 <div className="bottom">
