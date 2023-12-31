@@ -4,9 +4,9 @@ import BookDisplay from "./components/BookDisplay";
 import axios from "axios";
 import {useState,useEffect, SetStateAction} from "react";
 import Filters from "./components/Filters";
-import logo from "./src/assets/logo.svg";
-import  painting from "./src/assets/painting.svg";
-import searchimg from "./src/assets/search.svg";
+import logo from "./assets/logo.svg";
+import  painting from "./assets/painting.svg";
+import searchimg from "./assets/search.svg";
 
 
 function App() {
